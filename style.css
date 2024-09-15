@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #3a4452;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* New CSS for expression display */
+.expression {
+    font-size: 1.2em;
+    color: #aaa;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.display {
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.btn {
+    padding: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-equal {
+    grid-column: span 2;
+}
+.btn-operator {
+    color: #33ffd8
+}
